@@ -54,8 +54,8 @@ def chat(message, history):
 
   return history, history
 
-title = "DialoGPT fine-tuned on DailyDialog"
-description = "Gradio demo for open-domain dialog using DialoGPT. Model was fine-tuned on the DailyDialog multi-turn dataset"
+title = "DialoGPT fine-tuned on Kaggle"
+description = "Gradio demo for open-domain dialog using DialoGPT. Model was fine-tuned on the Kaggle dataset"
 iface = gr.Interface(
     chat,
     ["text", "state"],
