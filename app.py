@@ -3,9 +3,6 @@ import torch
 import transformers
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-@st.cache(hash_funcs=
-    {transformers.models.gpt2.tokenization_gpt2_fast.GPT2TokenizerFast: hash}, 
-    suppress_st_warning=True, allow_output_mutation=True)
 
 def load_data():    
     tokenizer = AutoTokenizer.from_pretrained("SheilaCXY/DialoGPT-RickBot")
