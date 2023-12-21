@@ -8,8 +8,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
     suppress_st_warning=True, allow_output_mutation=True)
 
 def load_data():    
-    tokenizer = AutoTokenizer.from_pretrained("xiaoyachong/DialoGPT-RickBot")
-    model = AutoModelForCausalLM.from_pretrained("xiaoyachong/DialoGPT-RickBot")
+    tokenizer = AutoTokenizer.from_pretrained("SheilaCXY/DialoGPT-RickBot")
+    model = AutoModelForCausalLM.from_pretrained("SheilaCXY/DialoGPT-RickBot")
     return tokenizer, model
 
 tokenizer, model = load_data()
